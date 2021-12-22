@@ -1,0 +1,26 @@
+using System;
+
+namespace _15._5
+{
+    class Program
+    {
+        static double Fact2(double n)
+        {
+            double result = 1;
+            for (int i = n % 2 == 0 ? 2 : 1; i <= n; i += 2)
+            {
+                result *= i;
+            }
+            return result;
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Fact2(6));
+            Console.WriteLine(Fact2(8));
+            Console.WriteLine(Fact2(4));
+            Console.WriteLine(Fact2(12));
+            Console.WriteLine(Fact2(20));
+        }
+    }
+}
