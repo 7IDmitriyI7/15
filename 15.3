@@ -1,0 +1,21 @@
+using System;
+
+namespace _15._3
+{
+    class Program
+    {
+        static double RingS(double r1, double r2)
+        {
+            return r1 > r2 ? Math.PI * (r1 * r1 - r2 * r2) : Math.PI * (r2 * r2 - r1 * r1);
+        }
+        static void Main(string[] args)
+        {
+            double S1 = RingS(2, 3);
+            double S2 = RingS(4, 5);
+            double S3 = RingS(6, 7);
+            Console.WriteLine(S1);
+            Console.WriteLine(S2);
+            Console.WriteLine(S3);
+        }
+    }
+}
