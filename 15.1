@@ -1,0 +1,28 @@
+using System;
+
+namespace _15
+{
+    class Program
+    {
+        public static void PowerA3(double a,out double b)
+        {
+            b = Math.Pow(a, 3);
+        }
+        static void Main(string[] args)
+        {
+            double[] mas = new double[5]{ 1, 2, 3, 4, 5 };
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write(mas[i]+" ");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < 5; i++)
+            {
+                PowerA3(mas[i], out mas[i]);
+                Console.Write(mas[i]+" ");
+            }
+            return;
+        }
+
+    }
+}
